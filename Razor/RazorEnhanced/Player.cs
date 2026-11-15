@@ -85,8 +85,8 @@ namespace RazorEnhanced
 
 
         //KR: Resistance and modifiers
-        /// <summary>
-        /// Resistance to Phisical damage.
+        /// <summary>@nodoc @deprecate
+        /// Resistance to Physical damage. ( Alias: Player.PhysicalResistance )
         /// </summary>
         public static int AR { get { return World.Player.AR; } }
         /// <summary>
@@ -106,6 +106,31 @@ namespace RazorEnhanced
         /// Resistance to Poison damage.
         /// </summary>
         public static int PoisonResistance { get { return World.Player.PoisonResistance; } }
+        /// <summary>
+        /// Resistance to Physical damage. ( Alias: Player.AR )
+        /// </summary>
+        public static int PhysicalResistance { get { return World.Player.AR; } }
+
+        /// <summary>
+        /// Maximum Physical resistance.
+        /// </summary>
+        public static int MaxPhysicalResistance { get { return World.Player.MaxPhysicResistence; } }
+        /// <summary>
+        /// Maximum Fire resistance.
+        /// </summary>
+        public static int MaxFireResistance { get { return World.Player.MaxFireResistence; } }
+        /// <summary>
+        /// Maximum Cold resistance.
+        /// </summary>
+        public static int MaxColdResistance { get { return World.Player.MaxColdResistence; } }
+        /// <summary>
+        /// Maximum Energy resistance.
+        /// </summary>
+        public static int MaxEnergyResistance { get { return World.Player.MaxEnergyResistence; } }
+        /// <summary>
+        /// Maximum Poison resistance.
+        /// </summary>
+        public static int MaxPoisonResistance { get { return World.Player.MaxPoisonResistence; } }
 
         // KR Attribute
         /// <summary>
@@ -149,6 +174,10 @@ namespace RazorEnhanced
         /// Get total Defense Chance Increase.
         /// </summary>
         public static int DefenseChanceIncrease { get { return World.Player.DefenseChanceIncrease; } }
+        /// <summary>
+        /// Get maximum Defense Chance Increase.
+        /// </summary>
+        public static int MaxDefenseChanceIncrease { get { return World.Player.MaxDefenseChanceIncrease; } }
         /// <summary>
         /// Get total Spell Damage Increase.
         /// </summary>
@@ -197,6 +226,10 @@ namespace RazorEnhanced
         /// Get total Maximum Stamina Increase.
         /// </summary>
         public static int MaximumStaminaIncrease { get { return World.Player.MaximumStaminaIncrease; } }
+        /// <summary>
+        /// Get total Maximum Mana Increase.
+        /// </summary>
+        public static int MaximumManaIncrease { get { return World.Player.MaximumManaIncrease; } }
 
         /// <summary>
         /// Finds all neutral pets in the area that can be renamed.
