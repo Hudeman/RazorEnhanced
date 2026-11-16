@@ -472,6 +472,10 @@ namespace RazorEnhanced
         /// </summary>
         public static int Luck { get { return World.Player.Luck; } }
         /// <summary>
+        /// Player current tithing points.
+        /// </summary>
+        public static int TithingPoints { get { return World.Player.Tithe; } }
+        /// <summary>
         /// Player Body or MobileID (see: Mobile.Body)
         /// </summary>
         public static int Body { get { return World.Player.TypeID; } }
